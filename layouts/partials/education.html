@@ -10,9 +10,11 @@
         <time>{{ .date }}</time>
       </span>
     </header>
+    {{ if and .type .description }}
     <p>
       <em>{{ title .type }}: {{ .description }}</em>
     </p>
+    {{ end }}
   </article>
   {{ end }}
 </section>

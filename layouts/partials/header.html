@@ -6,8 +6,8 @@
   </p>
   <address>
     <a href="{{ .Site.Params.google_maps }}">
-      {{ .Site.Params.address }}<br/>
-      {{ .Site.Params.postcode }}<br/>
+      {{ if .Site.Params.address }}{{ .Site.Params.address }}<br/>{{ end }}
+      {{ if .Site.Params.postcode }}{{ .Site.Params.postcode }}<br/>{{ end }}
       {{ .Site.Params.city }}<br/>
       {{ .Site.Params.country }}
     </a>
